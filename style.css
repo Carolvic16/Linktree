@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFDBDA; /* Soft Blush */
+    color: #604D53;            /* Taupe Grey */
+    font-family: "Crimson Text", serif; 
+    display: flex;
+    flex-direction: column;    
+    align-items: center;      
+    justify-content: center;  
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: auto;       
+    margin-bottom: auto;   
+}
+
+header {
+    margin-bottom: 32px;
+
+}
+
+.profile-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 16px; /* Centraliza o bloco na tela e dá espaço para o que vem abaixo */
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assents/eu.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px ; 
+}
+
+/* A estrela flutuando sobre a foto */
+.header-icon2 {
+    display: block;
+    position: absolute;
+    
+    /* Posição: sutilmente para fora no topo direito */
+    top: -12px;        
+    right: -15px;      
+    
+    transform: rotate(100deg); 
+    z-index: 2;               
+}
+
+/* Ícone da lua que fica abaixo da foto */
+.header-icon {
+    display: block;
+    margin: 0 auto 12px;
+}
+
+h1 {
+    font-size: 2rem; 
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #604D53;
+}
+
+.stars {
+    font-size: 0.8rem;
+    color: #DB7F8E; 
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+      
+ 
+}.link {
+    display: block;
+    padding: 18px 30px; 
+    text-decoration: none;
+    color: #604D53; /* Cor do texto elegante da sua paleta */
+    
+    /* Centro iluminado: usamos um fundo quase branco (rosado bem leve) e translúcido */
+    background: rgba(255, 245, 245, 0.85); 
+    
+    /* A borda precisa ser o rosa neon bem marcado */
+    border: 2px solid #DB7F8E; 
+    border-radius: 50px; /* Formato pílula perfeito */
+    
+    font-size: 1.1rem;         
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease-in-out;
+    
+    /* --- EFEITO NEON --- */
+    box-shadow: 
+        /* Brilho interno para acender o centro do botão */
+        inset 0 0 12px rgba(219, 127, 142, 0.3),
+        /* Brilho externo colado na borda */
+        0 0 10px rgba(219, 127, 142, 0.4),
+        /* O "halo" de luz rosa que se espalha ao redor */
+        0 0 25px rgba(219, 127, 142, 0.6),
+        /* Sombra de projeção suave no fundo */
+        0 4px 8px rgba(96, 77, 83, 0.15);
+}
+
+
+.link:hover {
+
+    background: rgba(219, 127, 142, 0.15); 
+    color: #DB7F8E; 
+    border-color: #DB7F8E;
+    transform: translateY(-3px);
+    
+    box-shadow: 
+        inset 0 0 15px rgba(219, 127, 142, 0.5),
+        0 0 15px rgba(219, 127, 142, 0.6),
+        0 0 40px rgba(219, 127, 142, 0.8), 
+        0 6px 12px rgba(96, 77, 83, 0.2);
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    color: #604D53;
+    opacity: 0.6; 
+}
