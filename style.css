@@ -39,7 +39,7 @@ header {
 .profile-pic {
     width: 100%;
     height: 100%;
-    background-image: url('assets/eu.jpeg');
+    background-image: url('assents/eu.jpeg');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
